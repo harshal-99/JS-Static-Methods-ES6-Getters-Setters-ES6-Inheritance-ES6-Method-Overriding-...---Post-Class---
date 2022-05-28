@@ -2,7 +2,11 @@
 
 class Shape {
   constructor(color) {
-    this.color = color
+    if (color === undefined || color === null) {
+      this.color = "green"
+    } else {
+      this.color = color
+    }
   }
   drawShape() {
 
